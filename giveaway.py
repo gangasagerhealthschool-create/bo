@@ -32,7 +32,7 @@ def create_giveaway_embed(prize, end_time, host, entries, winners):
             f"Winners: {winners}\n"
             f"Time: <t:{ts}:R>"
         ),
-        color=discord.Color.pink()
+        color=discord.Color.red()
     )
     return embed
 
@@ -217,7 +217,7 @@ class Giveaway(commands.Cog):
 
         win_embed = discord.Embed(
             title=" 🎉 Congratulations!",
-            color=discord.Color.pink()
+            color=discord.Color.red()
         )
 
         desc_lines = [f"**Prize:** {g['prize']}"]
