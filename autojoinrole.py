@@ -103,7 +103,7 @@ class AutoJoinRole(commands.Cog):
                 f"**Fake Invites (accounts < 7 days):** {fake}\n"
                 f"**Net Invites:** {net_invites}"
             ),
-            color=discord.Color.pink()
+            color=discord.Color.red()
         )
         embed.set_thumbnail(url=user.avatar.url if user.avatar else user.default_avatar.url)
 
@@ -259,7 +259,7 @@ class AutoJoinRole(commands.Cog):
                 embed = discord.Embed(
                     title="🎉 Welcome!",
                     description=description,
-                    color=discord.Color.pink()
+                    color=discord.Color.red()
                 )
                 embed.set_thumbnail(url=member.avatar.url if member.avatar else member.default_avatar.url)
                 embed.set_footer(text=f"Member #{len(guild.members)}")
